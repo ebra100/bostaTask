@@ -10,6 +10,7 @@ import "./schedulers/check"
 import authRouter from "./routes/authRouter"
 import checkRouter from "./routes/checkRouter"
 const app = express();
+require('dotenv').config()
 
 app.use(logger("dev"));
 app.use(express.json());
